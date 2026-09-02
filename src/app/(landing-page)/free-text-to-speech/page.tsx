@@ -14,6 +14,7 @@ import {
 import Image from "next/image";
 import FreeTtsWidgetLazy from "@/components/free-tts/free-tts-widget-lazy";
 import { EXTENSIONS } from "@/data/extensions";
+import LandingTopBar from "../_components/landing-top-bar";
 
 const FAQS = [
   {
@@ -63,7 +64,8 @@ export default function FreeTextToSpeechPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
-      <Container sx={{ py: { xs: 6, sm: 8 } }}>
+      <LandingTopBar />
+      <Container sx={{ py: { xs: 4, sm: 6 } }}>
         <Stack spacing={4}>
           <Box textAlign="center">
             <Typography component="h1" variant="h3" color="text.primary" gutterBottom>

@@ -1,6 +1,5 @@
 "use client";
 
-import { useThemeContext } from "@/components/context/theme-context";
 import { type ReaderExtension } from "@/data/extensions";
 import {
   alpha,
@@ -14,10 +13,9 @@ import {
   Link,
   Typography,
 } from "@mui/material";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import Image from "next/image";
 import NextLink from "next/link";
-import { ToggleColorMode } from "../_components/toggle-color-mode";
+import LandingTopBar from "./landing-top-bar";
 
 type StoreKey = "chrome" | "firefox" | "edge";
 
@@ -47,8 +45,6 @@ export default function ExtensionDetail({
 }: {
   extension: ReaderExtension;
 }) {
-  const { mode, toggleTheme } = useThemeContext();
-
   const stores = (
     [
       ["chrome", extension.chrome],
@@ -70,27 +66,7 @@ export default function ExtensionDetail({
         backgroundRepeat: "no-repeat",
       })}
     >
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          pt: 2,
-          px: 2,
-        }}
-      >
-        <Button
-          component={NextLink}
-          href="/"
-          startIcon={<ArrowBackIcon />}
-          color="inherit"
-          size="small"
-        >
-          All Extensions
-        </Button>
-        <ToggleColorMode mode={mode} toggleColorMode={toggleTheme} />
-      </Box>
-
+      <LandingTopBar />
       <Container
         sx={{
           pt: { xs: 4, sm: 6 },

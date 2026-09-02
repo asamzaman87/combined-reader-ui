@@ -18,6 +18,7 @@ import {
 } from "@mui/material";
 import Image from "next/image";
 import NextLink from "next/link";
+import LandingTopBar from "./landing-top-bar";
 
 export default function FunnelPageView({ page }: { page: SeoFunnelPage }) {
   const extension = getExtensionBySlug(page.extensionSlug);
@@ -43,7 +44,8 @@ export default function FunnelPageView({ page }: { page: SeoFunnelPage }) {
         backgroundRepeat: "no-repeat",
       })}
     >
-      <Container sx={{ py: { xs: 6, sm: 8 } }}>
+      <LandingTopBar />
+      <Container sx={{ py: { xs: 4, sm: 6 } }}>
         <Stack spacing={4}>
           {extension && (
             <Stack direction="row" spacing={2} alignItems="center">
