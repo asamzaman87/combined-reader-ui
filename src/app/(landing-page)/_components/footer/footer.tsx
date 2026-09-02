@@ -79,8 +79,24 @@ export default function Footer() {
             <Link component={NextLink} href="/privacy-policy">
               Privacy Policy
             </Link>
+            <Link component={NextLink} href="/free-text-to-speech">
+              Free TTS Tool
+            </Link>
+            <Link component={NextLink} href="/chatgpt-text-to-speech">
+              ChatGPT TTS
+            </Link>
+            <Link component={NextLink} href="/claude-text-to-speech">
+              Claude TTS
+            </Link>
             <Link component={NextLink} href="/">
               All Extensions
+            </Link>
+            <Link
+              href="https://www.gpt-reader.com/free-text-to-speech"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GPT Reader site
             </Link>
           </Box>
         </Box>

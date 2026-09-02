@@ -5,6 +5,7 @@ import { EXTENSIONS } from "@/data/extensions";
 import {
   alpha,
   Box,
+  Button,
   Card,
   CardActionArea,
   CardContent,
@@ -54,10 +55,19 @@ const HomePage = () => {
             maxWidth={720}
             mx="auto"
           >
-            Choose Google, GPT, Gemini, Claude, Grok, Qwen, Microsoft, Pi, or
-            Mistral—each extension turns text and documents into natural speech
-            you can listen to or download.
+            Choose Google, GPT, Gemini, Claude, Grok, Qwen, Microsoft, Pi,
+            Mistral, or Clipchamp—each extension turns text and documents into
+            natural speech you can listen to or download.
           </Typography>
+          <Button
+            component={Link}
+            href="/free-text-to-speech"
+            variant="contained"
+            size="large"
+            sx={{ mt: 2 }}
+          >
+            Try Free TTS
+          </Button>
         </Box>
 
         <Typography

@@ -140,6 +140,19 @@ export const EXTENSIONS: ReaderExtension[] = [
     firefox: "https://addons.mozilla.org/en-US/firefox/addon/mistral-reader/",
     edge: "https://microsoftedge.microsoft.com/addons/detail/anppodhbpambdmniabhjkoabbippgcbi",
   },
+  {
+    slug: "clipchamp-reader",
+    name: "Clipchamp Reader",
+    shortBlurb: "Free AI text to speech with natural voices for Clipchamp.",
+    tagline: "Listen to Text Like Never Before with Clipchamp-Powered Voices",
+    longDescription:
+      "Clipchamp Reader brings natural AI voices to your text or documents—instantly read aloud or download high-quality speech for free. Whether you're typing, uploading documents, or exploring ideas, Clipchamp Reader delivers a smooth listening experience with dark/light mode, adjustable playback speeds, pause and resume, and a full-screen UI.",
+    icon: "/images/sim-clipchamp.png",
+    chrome:
+      "https://chromewebstore.google.com/detail/clipchamp-reader-free-ai/ajophdmmeblpoaaomfkbpiiknigelbde",
+    firefox: "https://addons.mozilla.org/en-US/firefox/addon/clipchamp-reader-free/",
+    edge: "https://microsoftedge.microsoft.com/addons/detail/clipchamp-reader-free-ai/chimookekdfalnkhkpofcpcljjckgfoe",
+  },
 ];
 
 export function getExtensionBySlug(
