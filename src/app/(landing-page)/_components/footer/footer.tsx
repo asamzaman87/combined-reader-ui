@@ -79,6 +79,9 @@ export default function Footer() {
             <Link component={NextLink} href="/privacy-policy">
               Privacy Policy
             </Link>
+            <Link component={NextLink} href="/appsumo">
+              Redeem AppSumo code
+            </Link>
             <Link component={NextLink} href="/free-text-to-speech">
               Free TTS Tool
             </Link>
