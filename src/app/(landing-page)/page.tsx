@@ -43,6 +43,16 @@ const HomePage = () => {
         }}
       >
         <Box textAlign="center" mb={{ xs: 4, sm: 6 }}>
+          <Box sx={{ display: "flex", justifyContent: "center", mb: 2 }}>
+            <Image
+              src="/images/ai-readers-logo.png"
+              alt="AI Readers"
+              width={96}
+              height={96}
+              priority
+              style={{ borderRadius: 20 }}
+            />
+          </Box>
           <Typography component="h1" variant="h3" color="text.primary" mb={1}>
             AI Readers
           </Typography>

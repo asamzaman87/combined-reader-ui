@@ -27,8 +27,9 @@ export default async function RootLayout({
           content="Discover free AI text-to-speech browser extensions powered by Google, GPT, Gemini, Claude, and more."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/images/sim-google.png" />
-        <link rel="icon" href="/images/sim-google.png" type="image/png" />
+        <meta property="og:image" content="/images/ai-readers-logo.png" />
+        <link rel="icon" href="/images/ai-readers-logo.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/images/ai-readers-logo.png" />
       </head>
       <body suppressHydrationWarning className={inter.className}>
         <ThemeContextProvider>{children}</ThemeContextProvider>
