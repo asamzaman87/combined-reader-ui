@@ -19,6 +19,8 @@ async function postJson(
     method: "POST",
     headers: {
       "Content-Type": "application/json",
+      // Vercel blocks these POSTs unless this header is present.
+      "X-From-Extension": "true",
       ...(token ? { Authorization: `Bearer ${token}` } : {}),
     },
     body: JSON.stringify(body),
