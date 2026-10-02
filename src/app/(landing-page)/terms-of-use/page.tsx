@@ -14,7 +14,7 @@ export default function TermsOfUsePage() {
           extensions for text-to-speech (and, where offered, related features
           such as transcription). AI Readers currently includes extensions such
           as GPT Reader, Google Reader, Gemini Reader, Claude Reader, Grok
-          Reader, Qwen Reader, Microsoft Reader, Pi Reader, and Mistral Reader
+          Reader, Qwen Reader, Pi Reader, Mistral Reader, and Clipchamp Reader
           (collectively, the &quot;Extensions&quot;). By installing, accessing,
           or using any Extension or this website, you agree to these Terms of
           Use.
@@ -77,8 +77,8 @@ export default function TermsOfUsePage() {
         <Typography component="h2">6. Third-Party Platforms and Rate Limits</Typography>
         <Typography>
           The Extensions rely on third-party websites and AI services (for
-          example, ChatGPT, Google, Gemini, Claude, Grok, Qwen, Microsoft
-          Copilot, Pi, or Mistral). Those platforms may impose rate limits,
+          example, ChatGPT, Google, Gemini, Claude, Grok, Qwen, Pi, Mistral, or
+          Clipchamp). Those platforms may impose rate limits,
           usage caps, authentication requirements, outages, or policy changes
           outside our control. Processing often involves sending content in
           chunks to the relevant platform, which can trigger temporary rate

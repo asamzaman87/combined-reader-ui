@@ -15,7 +15,7 @@ export default async function RootLayout({
         <title>AI Readers — Free AI Text to Speech Extensions</title>
         <meta
           name="description"
-          content="Discover free AI text-to-speech browser extensions powered by Google, GPT, Gemini, Claude, Grok, Qwen, Microsoft, Pi, and Mistral voices."
+          content="Discover free AI text-to-speech browser extensions powered by Google, GPT, Gemini, Claude, Grok, Qwen, Pi, Mistral, and Clipchamp voices."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
@@ -28,8 +28,14 @@ export default async function RootLayout({
         />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/images/ai-readers-logo.png" />
-        <link rel="icon" href="/images/ai-readers-logo.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/images/ai-readers-logo.png" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link
+          rel="icon"
+          href="/images/ai-readers-favicon.png"
+          type="image/png"
+          sizes="64x64"
+        />
+        <link rel="apple-touch-icon" href="/apple-icon.png" />
       </head>
       <body suppressHydrationWarning className={inter.className}>
         <ThemeContextProvider>{children}</ThemeContextProvider>

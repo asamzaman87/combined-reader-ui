@@ -52,12 +52,6 @@ export const SEO_FUNNEL_PAGES: SeoFunnelPage[] = [
   funnel("google-text-to-speech", "Google", "google-reader", "Google text to speech"),
   funnel("grok-text-to-speech", "Grok", "grok-reader", "Grok text to speech"),
   funnel("qwen-text-to-speech", "Qwen", "qwen-reader", "Qwen text to speech"),
-  funnel(
-    "microsoft-text-to-speech",
-    "Microsoft",
-    "microsoft-reader",
-    "Copilot text to speech",
-  ),
   funnel("pi-text-to-speech", "Pi", "pi-reader", "Pi AI text to speech"),
   funnel("mistral-text-to-speech", "Mistral", "mistral-reader", "Mistral text to speech"),
   funnel(

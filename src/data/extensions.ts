@@ -98,21 +98,6 @@ export const EXTENSIONS: ReaderExtension[] = [
     edge: "https://microsoftedge.microsoft.com/addons/detail/nbnpllpcojcmcmnclgmfjjehcifajfmi",
   },
   {
-    slug: "microsoft-reader",
-    name: "Microsoft Reader",
-    shortBlurb:
-      "Microsoft Copilot voices for reading aloud and downloads.",
-    tagline:
-      "Listen to Text Like Never Before with Microsoft Copilot Voices",
-    longDescription:
-      "Looking for a revolutionary way to listen to text? Microsoft Reader brings Microsoft Copilot's natural AI voices to your text or documents—instantly read aloud or download high-quality speech for free. Whether you're typing, uploading documents, or exploring ideas, Microsoft Reader delivers a smooth, customizable listening experience with dark/light mode, adjustable playback speeds, pause and resume, and a full-screen UI.",
-    icon: "/images/sim-microsoft.png",
-    chrome:
-      "https://chromewebstore.google.com/detail/microsoft-reader-free-ai/gnknbinigepmjjjdbkacllgccomhmadc",
-    firefox:
-      "https://addons.mozilla.org/en-US/firefox/addon/microsoft-reader/",
-  },
-  {
     slug: "pi-reader",
     name: "Pi Reader",
     shortBlurb: "Free AI text to speech with Pi.ai's natural voices.",
