@@ -25,7 +25,7 @@ const FAQS = [
   {
     question: "Which AI platforms do you support?",
     answer:
-      "We offer Reader extensions for GPT, Google, Gemini, Claude, Grok, Qwen, Microsoft, Pi, Mistral, and Clipchamp.",
+      "We offer Reader extensions for GPT, Google, Gemini, Claude, Grok, Qwen, Pi, Mistral, and Clipchamp.",
   },
   {
     question: "How is this different from the extensions?",

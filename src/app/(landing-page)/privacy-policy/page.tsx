@@ -14,8 +14,8 @@ export default function PrivacyPolicyPage() {
           Policy describes how we collect, use, disclose, and safeguard
           information when you use this website or any AI Readers browser
           extension, including GPT Reader, Google Reader, Gemini Reader, Claude
-          Reader, Grok Reader, Qwen Reader, Microsoft Reader, Pi Reader, and
-          Mistral Reader (collectively, the &quot;Extensions&quot;).
+          Reader, Grok Reader, Qwen Reader, Pi Reader, Mistral Reader, and
+          Clipchamp Reader (collectively, the &quot;Extensions&quot;).
         </Typography>
       </section>
 
