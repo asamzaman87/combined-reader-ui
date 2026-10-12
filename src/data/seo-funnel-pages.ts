@@ -32,11 +32,12 @@ const funnel = (
   faqs: [
     {
       question: `Is ${platformName} text to speech free?`,
-      answer: `Yes. Use the free online tool on this page, then install ${platformName} Reader for the full extension experience.`,
+      answer: `Yes. Use the free online text-to-speech tool, then install ${platformName} Reader for the full extension experience.`,
     },
     {
       question: "Does my text get uploaded?",
-      answer: "The online demo runs in your browser. The extension processes content for playback in your workflow.",
+      answer:
+        "The free online tool runs in your browser and does not upload your text. The extension processes content for playback in your workflow.",
     },
     {
       question: `How do I get ${platformName} Reader?`,
@@ -46,7 +47,7 @@ const funnel = (
 });
 
 export const SEO_FUNNEL_PAGES: SeoFunnelPage[] = [
-  funnel("chatgpt-text-to-speech", "GPT", "gpt-reader", "ChatGPT text to speech"),
+  funnel("chatgpt-text-to-speech", "ChatGPT", "gpt-reader", "ChatGPT text to speech"),
   funnel("claude-text-to-speech", "Claude", "claude-reader", "Claude text to speech"),
   funnel("gemini-text-to-speech", "Gemini", "gemini-reader", "Gemini read aloud"),
   funnel("google-text-to-speech", "Google", "google-reader", "Google text to speech"),

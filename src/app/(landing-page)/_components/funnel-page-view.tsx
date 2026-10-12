@@ -1,6 +1,5 @@
 "use client";
 
-import FreeTtsWidgetLazy from "@/components/free-tts/free-tts-widget-lazy";
 import { getExtensionBySlug } from "@/data/extensions";
 import {
   getRelatedFunnelPages,
@@ -66,12 +65,6 @@ export default function FunnelPageView({ page }: { page: SeoFunnelPage }) {
             {page.h1}
           </Typography>
 
-          <FreeTtsWidgetLazy
-            variant="compact"
-            ctaHref={`/${page.extensionSlug}`}
-            ctaLabel={`Install ${page.platformName} Reader`}
-          />
-
           <Stack spacing={1.5}>
             {page.intro.map((paragraph) => (
               <Typography key={paragraph} variant="body1" color="text.secondary">
@@ -100,7 +93,7 @@ export default function FunnelPageView({ page }: { page: SeoFunnelPage }) {
 
           {page.slug === "chatgpt-text-to-speech" && (
             <Typography variant="body2" color="text.secondary">
-              Also see the dedicated GPT Reader site at{" "}
+              Also see the dedicated ChatGPT Reader site at{" "}
               <Link
                 href="https://www.gpt-reader.com/free-text-to-speech"
                 target="_blank"

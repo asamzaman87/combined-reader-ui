@@ -1,6 +1,7 @@
 "use client";
 
 import { type ReaderExtension } from "@/data/extensions";
+import { EXTENSION_PREVIEWS } from "@/data/homepage-previews";
 import {
   alpha,
   Box,
@@ -16,6 +17,7 @@ import {
 import Image from "next/image";
 import NextLink from "next/link";
 import LandingTopBar from "./landing-top-bar";
+import SampleVoices from "./sample-voices";
 
 type StoreKey = "chrome" | "firefox" | "edge";
 
@@ -45,6 +47,7 @@ export default function ExtensionDetail({
 }: {
   extension: ReaderExtension;
 }) {
+  const preview = EXTENSION_PREVIEWS[extension.slug];
   const stores = (
     [
       ["chrome", extension.chrome],
@@ -170,10 +173,20 @@ export default function ExtensionDetail({
               <Grid item xs={12} md={5}>
                 <Card>
                   <CardContent>
+                    {preview && (
+                      <Box sx={{ mb: 2.5 }}>
+                        <SampleVoices
+                          extensionSlug={extension.slug}
+                          samples={preview.samples}
+                          prominent
+                        />
+                      </Box>
+                    )}
                     <Typography
                       component="h2"
                       variant="h5"
                       color="text.primary"
+                      textAlign="center"
                     >
                       How It Works
                     </Typography>

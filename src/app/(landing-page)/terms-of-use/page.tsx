@@ -13,7 +13,7 @@ export default function TermsOfUsePage() {
           Welcome to AI Readers, a family of free and optionally paid browser
           extensions for text-to-speech (and, where offered, related features
           such as transcription). AI Readers currently includes extensions such
-          as GPT Reader, Google Reader, Gemini Reader, Claude Reader, Grok
+          as ChatGPT Reader, Google Reader, Gemini Reader, Claude Reader, Grok
           Reader, Qwen Reader, Pi Reader, Mistral Reader, and Clipchamp Reader
           (collectively, the &quot;Extensions&quot;). By installing, accessing,
           or using any Extension or this website, you agree to these Terms of

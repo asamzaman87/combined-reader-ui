@@ -2,19 +2,11 @@
 
 import { useThemeContext } from "@/components/context/theme-context";
 import { EXTENSIONS } from "@/data/extensions";
-import {
-  alpha,
-  Box,
-  Button,
-  Card,
-  CardActionArea,
-  CardContent,
-  Container,
-  Grid,
-  Typography,
-} from "@mui/material";
+import { EXTENSION_PREVIEWS } from "@/data/homepage-previews";
+import { alpha, Box, Container, Grid, Typography } from "@mui/material";
 import Image from "next/image";
-import Link from "next/link";
+import DemoVideoDialog from "./_components/demo-video-dialog";
+import ExtensionPreviewCard from "./_components/extension-preview-card";
 import { ToggleColorMode } from "./_components/toggle-color-mode";
 
 const HomePage = () => {
@@ -69,15 +61,7 @@ const HomePage = () => {
             Clipchamp—each extension turns text and documents into natural
             speech you can listen to or download.
           </Typography>
-          <Button
-            component={Link}
-            href="/free-text-to-speech"
-            variant="contained"
-            size="large"
-            sx={{ mt: 2 }}
-          >
-            Try Free TTS
-          </Button>
+          <DemoVideoDialog />
         </Box>
 
         <Typography
@@ -91,42 +75,15 @@ const HomePage = () => {
         </Typography>
 
         <Grid container spacing={3}>
-          {EXTENSIONS.map((ext) => (
-            <Grid item xs={12} sm={6} md={4} key={ext.slug}>
-              <Card variant="outlined" sx={{ height: "100%" }}>
-                <CardActionArea
-                  component={Link}
-                  href={`/${ext.slug}`}
-                  sx={{ height: "100%", alignItems: "stretch" }}
-                >
-                  <CardContent
-                    sx={{
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "center",
-                      textAlign: "center",
-                      gap: 1.5,
-                      py: 3,
-                    }}
-                  >
-                    <Image
-                      src={ext.icon}
-                      alt={`${ext.name} icon`}
-                      width={72}
-                      height={72}
-                      style={{ borderRadius: "50%" }}
-                    />
-                    <Typography variant="h6" color="text.primary">
-                      {ext.name}
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      {ext.shortBlurb}
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-              </Card>
-            </Grid>
-          ))}
+          {EXTENSIONS.map((ext) => {
+            const preview = EXTENSION_PREVIEWS[ext.slug];
+            if (!preview) return null;
+            return (
+              <Grid item xs={12} sm={6} md={4} key={ext.slug}>
+                <ExtensionPreviewCard extension={ext} preview={preview} />
+              </Grid>
+            );
+          })}
         </Grid>
       </Container>
     </Box>

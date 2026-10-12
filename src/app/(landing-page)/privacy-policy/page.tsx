@@ -13,7 +13,7 @@ export default function PrivacyPolicyPage() {
           At AI Readers, protecting your privacy is a priority. This Privacy
           Policy describes how we collect, use, disclose, and safeguard
           information when you use this website or any AI Readers browser
-          extension, including GPT Reader, Google Reader, Gemini Reader, Claude
+          extension, including ChatGPT Reader, Google Reader, Gemini Reader, Claude
           Reader, Grok Reader, Qwen Reader, Pi Reader, Mistral Reader, and
           Clipchamp Reader (collectively, the &quot;Extensions&quot;).
         </Typography>

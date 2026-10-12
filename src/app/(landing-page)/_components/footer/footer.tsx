@@ -99,7 +99,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              GPT Reader site
+              ChatGPT Reader site
             </Link>
           </Box>
         </Box>

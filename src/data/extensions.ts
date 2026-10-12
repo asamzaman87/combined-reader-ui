@@ -14,17 +14,18 @@ export type ReaderExtension = {
 export const EXTENSIONS: ReaderExtension[] = [
   {
     slug: "gpt-reader",
-    name: "GPT Reader",
+    name: "ChatGPT Reader",
     shortBlurb:
       "ChatGPT-powered voices for reading aloud and downloading speech.",
     tagline: "Listen to Text Like Never Before with ChatGPT-Powered Voices",
     longDescription:
-      "Looking for a revolutionary way to listen to text? GPT Reader combines the power of ChatGPT's premium voices with user-friendly features to create an unparalleled text-to-speech experience. Whether you're typing, uploading documents, or exploring ideas, GPT Reader lets you enjoy rich AI-powered voices—for free. With dark/light mode, adjustable playback speeds, pause and resume, and a full-screen UI, it's never been easier to turn text into an immersive listening experience.",
+      "Looking for a revolutionary way to listen to text? ChatGPT Reader combines the power of ChatGPT's premium voices with user-friendly features to create an unparalleled text-to-speech experience. Whether you're typing, uploading documents, or exploring ideas, ChatGPT Reader lets you enjoy rich AI-powered voices—for free. With dark/light mode, adjustable playback speeds, pause and resume, and a full-screen UI, it's never been easier to turn text into an immersive listening experience.",
     icon: "/images/sim-gpt.png",
     chrome:
       "https://chromewebstore.google.com/detail/gpt-reader-free-ai-text-t/aeggkceabpfajnglgaeadofdmeboimml",
     firefox: "https://addons.mozilla.org/en-US/firefox/addon/gpt-reader/",
     edge: "https://microsoftedge.microsoft.com/addons/detail/oalnicbngdjhapmbjnoampbhioncjleo",
+    youtubeEmbed: "https://www.youtube.com/embed/PhJTcoShQ1M",
   },
   {
     slug: "google-reader",
@@ -70,6 +71,7 @@ export const EXTENSIONS: ReaderExtension[] = [
       "https://chromewebstore.google.com/detail/claude-reader-free-ai-tex/aoclimlcmfknemigkhdemgalejakgcdb",
     firefox: "https://addons.mozilla.org/en-US/firefox/addon/claude-reader/",
     edge: "https://microsoftedge.microsoft.com/addons/detail/bobmnabaicplbcpnodlddhnlhnmodgbj",
+    youtubeEmbed: "https://www.youtube.com/embed/UhSit6XHvMw",
   },
   {
     slug: "grok-reader",
@@ -83,6 +85,7 @@ export const EXTENSIONS: ReaderExtension[] = [
       "https://chromewebstore.google.com/detail/grok-reader-free-ai-text/fjnogbndoomcjbphhjmgcocbpkbpcbca",
     firefox: "https://addons.mozilla.org/en-US/firefox/addon/grok-reader/",
     edge: "https://microsoftedge.microsoft.com/addons/detail/pfidahbbhgkgjeknmojobhkpjgpgjbnj",
+    youtubeEmbed: "https://www.youtube.com/embed/ORIssXydsUw",
   },
   {
     slug: "qwen-reader",
@@ -96,6 +99,7 @@ export const EXTENSIONS: ReaderExtension[] = [
       "https://chromewebstore.google.com/detail/qwen-reader-free-ai-text/bdbgodefpempnenofmppdmpdhegnioam",
     firefox: "https://addons.mozilla.org/en-US/firefox/addon/qwen-reader/",
     edge: "https://microsoftedge.microsoft.com/addons/detail/nbnpllpcojcmcmnclgmfjjehcifajfmi",
+    youtubeEmbed: "https://www.youtube.com/embed/U11ukek9jLo",
   },
   {
     slug: "pi-reader",
@@ -109,8 +113,7 @@ export const EXTENSIONS: ReaderExtension[] = [
       "https://chromewebstore.google.com/detail/pi-reader-free-ai-text-to/ngnphdiiiilpdlljbiicaaeaceellapn",
     firefox: "https://addons.mozilla.org/en-US/firefox/addon/pi-reader-tts/",
     edge: "https://microsoftedge.microsoft.com/addons/detail/aefpgpieaihomjgjikllabcmceilmhjn",
-    youtubeEmbed:
-      "https://www.youtube.com/embed/WxnBF-iTpmk?si=2AzI9h4OG1LE28U5",
+    youtubeEmbed: "https://www.youtube.com/embed/X3tWHlAzcXw",
   },
   {
     slug: "mistral-reader",
@@ -124,6 +127,7 @@ export const EXTENSIONS: ReaderExtension[] = [
       "https://chromewebstore.google.com/detail/mistral-reader-free-ai-te/dfdfdlaadogidgbpiepjnpilbcfbpjgp",
     firefox: "https://addons.mozilla.org/en-US/firefox/addon/mistral-reader/",
     edge: "https://microsoftedge.microsoft.com/addons/detail/anppodhbpambdmniabhjkoabbippgcbi",
+    youtubeEmbed: "https://www.youtube.com/embed/58kIejtF1FE",
   },
   {
     slug: "clipchamp-reader",
@@ -137,6 +141,7 @@ export const EXTENSIONS: ReaderExtension[] = [
       "https://chromewebstore.google.com/detail/clipchamp-reader-free-ai/ajophdmmeblpoaaomfkbpiiknigelbde",
     firefox: "https://addons.mozilla.org/en-US/firefox/addon/clipchamp-reader-free/",
     edge: "https://microsoftedge.microsoft.com/addons/detail/clipchamp-reader-free-ai/chimookekdfalnkhkpofcpcljjckgfoe",
+    youtubeEmbed: "https://www.youtube.com/embed/y-7nxsDdJbQ",
   },
 ];
 
