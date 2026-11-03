@@ -20,14 +20,16 @@ export const ThemeContextProvider = ({
 }: {
   children: React.ReactNode;
 }) => {
-  const [mode, setMode] = React.useState<PaletteMode>("light");
+  const [mode, setMode] = React.useState<PaletteMode>("dark");
 
   React.useEffect(() => {
     const savedMode =
       typeof window !== "undefined" &&
-      (localStorage.getItem("theme") as PaletteMode);
-    if (savedMode) {
+      (localStorage.getItem("theme") as PaletteMode | null);
+    if (savedMode === "light" || savedMode === "dark") {
       setMode(savedMode);
+    } else {
+      localStorage.setItem("theme", "dark");
     }
   }, []);
 

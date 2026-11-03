@@ -4,10 +4,10 @@ import { type ReaderExtension } from "@/data/extensions";
 import { type ExtensionPreview } from "@/data/homepage-previews";
 import { Box, Card, CardContent, Typography } from "@mui/material";
 import Image from "next/image";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import SampleVoices from "./sample-voices";
 import { stopSampleVoice } from "./sample-voice-player";
+import StoreInstallButtons from "./store-install-buttons";
 
 function PlatformMark({ src, name }: { src: string; name: string }) {
   return (
@@ -48,12 +48,23 @@ export default function ExtensionPreviewCard({
   const router = useRouter();
   const href = `/${extension.slug}`;
 
+  const openDetails = () => {
+    stopSampleVoice();
+    router.push(href);
+  };
+
   return (
     <Card
       variant="outlined"
-      onClick={() => {
-        stopSampleVoice();
-        router.push(href);
+      role="link"
+      tabIndex={0}
+      aria-label={`Open ${extension.name} details`}
+      onClick={openDetails}
+      onKeyDown={(event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          openDetails();
+        }
       }}
       sx={{
         height: "100%",
@@ -67,7 +78,7 @@ export default function ExtensionPreviewCard({
           flexDirection: "column",
           alignItems: "center",
           textAlign: "center",
-          gap: 1.5,
+          gap: 1.25,
           py: 3,
           height: "100%",
         }}
@@ -86,14 +97,7 @@ export default function ExtensionPreviewCard({
         </Box>
 
         <Box>
-          <Typography
-            component={Link}
-            href={href}
-            variant="h6"
-            color="text.primary"
-            onClick={(event) => event.stopPropagation()}
-            sx={{ textDecoration: "none" }}
-          >
+          <Typography variant="h6" color="text.primary">
             {extension.name}
           </Typography>
           <Typography variant="body2" color="text.secondary">
@@ -101,15 +105,34 @@ export default function ExtensionPreviewCard({
           </Typography>
         </Box>
 
-        <Typography variant="body2" color="text.secondary">
+        <Typography
+          variant="body2"
+          color="text.secondary"
+          sx={{
+            // Keep blurbs to a consistent block so sample voices sit close
+            // regardless of card height in the grid row.
+            minHeight: { sm: "2.75rem" },
+          }}
+        >
           {extension.shortBlurb}
         </Typography>
 
-        <Box sx={{ width: "100%", mt: "auto" }} onClick={(event) => event.stopPropagation()}>
+        {/* No mt:auto — that was creating a large gap on shorter cards
+            (e.g. ChatGPT / Google) before sample voices. Buttons still
+            stopPropagation so empty card space opens the detail page. */}
+        <Box
+          sx={{
+            width: "100%",
+            display: "flex",
+            flexDirection: "column",
+            gap: 1.5,
+          }}
+        >
           <SampleVoices
             extensionSlug={extension.slug}
             samples={preview.samples}
           />
+          <StoreInstallButtons extension={extension} />
         </Box>
       </CardContent>
     </Card>

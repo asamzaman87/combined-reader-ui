@@ -27,7 +27,6 @@ export default function DemoVideoDialog() {
         variant="contained"
         size="large"
         startIcon={<PlayArrowIcon />}
-        sx={{ mt: 2 }}
         onClick={() => {
           stopSampleVoice();
           setOpen(true);
