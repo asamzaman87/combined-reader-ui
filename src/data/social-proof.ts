@@ -13,7 +13,7 @@ export type UserQuote = {
   extension?: string;
 };
 
-/** Short social-proof quotes used across the homepage and detail pages. */
+/** Short social-proof quotes used on the homepage. */
 export const USER_QUOTES: UserQuote[] = [
   {
     quote:

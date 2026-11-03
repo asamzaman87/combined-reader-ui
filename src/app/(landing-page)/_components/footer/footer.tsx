@@ -1,6 +1,5 @@
 "use client";
 
-import { SITE_STATS } from "@/data/social-proof";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
@@ -60,9 +59,7 @@ export default function Footer() {
               A family of free browser extensions that turn text into premium,
               AI-powered speech. Pick the voice family you love—Google, GPT,
               Gemini, Claude, and more—and listen to documents, articles, and
-              notes instantly. Trusted by {SITE_STATS.usersLabel} users across
-              Chrome, Firefox, and Edge ({SITE_STATS.rating}/5 average store
-              rating).
+              notes instantly.
             </Typography>
           </Stack>
           <Box
